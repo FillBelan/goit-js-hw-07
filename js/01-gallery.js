@@ -7,7 +7,7 @@ galleryItems.forEach((item) => {
     "afterbegin",
     `
     <div class="gallery__item">
-  <a class="gallery__link" href='https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825__340.jpg'>
+  <a class="gallery__link" href='${item.original}'>
     <img
       class="gallery__image"
       src='${item.preview}'
