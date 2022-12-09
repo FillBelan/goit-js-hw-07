@@ -19,13 +19,33 @@ galleryItems.forEach((item) => {
   );
 });
 
+// images.addEventListener("click", (e) => {
+//   event.preventDefault();
+//   if (e.target.nodeName === "IMG") {
+// let instance = basicLightbox.create(`<img src='${e.target.getAttribute("data-source")}' width="800" height="600">
+// `);    
+
+//     instance.show();
+//     console.log(e.target.getAttribute("data-source"));
+//   }
+// });
+
+// document.addEventListener("keyup", e => {
+//   if (e.key === "Escape") {
+//       instance.close()  
+//   }
+// });
+
+
+
+let instance = basicLightbox.create(
+  `<img src='${e.target.getAttribute("data-source")}' width="800" height="600">`
+); 
+
 images.addEventListener("click", (e) => {
   event.preventDefault();
   if (e.target.nodeName === "IMG") {
-const instance = basicLightbox.create(`
-    <img src='${e.target.getAttribute("data-source")}' width="800" height="600">
-`);    
-
+   
     instance.show();
     console.log(e.target.getAttribute("data-source"));
   }
@@ -36,6 +56,4 @@ document.addEventListener("keyup", e => {
       instance.close()  
   }
 });
-
-
 

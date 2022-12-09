@@ -12,13 +12,6 @@ galleryItems.forEach((item) => {
   );
 });
 
-images.addEventListener('click', e => {
-    e.preventDefault();
-    if (e.target.nodeName === 'IMG') {
-        let gallery = new SimpleLightbox('.gallery a');
-        gallery.on('show.simplelightbox', function () {
-
-});
-    }
-})
+let gallery = new SimpleLightbox('.gallery a');
+gallery.on('show.simplelightbox');
 
